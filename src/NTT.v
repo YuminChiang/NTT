@@ -44,11 +44,10 @@ assign tf_addr = m + 1;
 assign input_ready = (state == LOAD);
 
 always @(posedge clk or posedge rst) begin
-    if(rst) begin
+    if(rst)
         state <= IDLE;
-    end else begin
+    else
         state <= next_state;
-    end
 end
 
 always @(*) begin
