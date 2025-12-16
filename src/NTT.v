@@ -1,5 +1,3 @@
-`include "BU.v"
-
 module NTT(
     input             clk, 
     input             rst, 

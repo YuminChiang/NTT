@@ -1,5 +1,3 @@
-`include "Mul_Mod.v"
-
 module BU(
     input       [22:0] X,
     input       [22:0] Y,
