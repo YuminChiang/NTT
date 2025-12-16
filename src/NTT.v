@@ -12,11 +12,11 @@ module NTT(
 
 localparam IDLE   = 3'd0;
 localparam LOAD   = 3'd1;
-localparam CALC   = 3'd3;   // BU
-localparam LEN    = 3'd4;   // len >>= 1
-localparam START  = 3'd5;   // start += len >> 1
-localparam J_LOOP = 3'd6;   // j++
-localparam OUTPUT = 3'd7;
+localparam CALC   = 3'd2;   // BU
+localparam LEN    = 3'd3;   // len >>= 1
+localparam START  = 3'd4;   // start += len >> 1
+localparam J_LOOP = 3'd5;   // j++
+localparam OUTPUT = 3'd6;
 
 reg [2:0] state, next_state;
 
