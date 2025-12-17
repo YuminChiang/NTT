@@ -17,8 +17,10 @@ wire [10:0] w_value;
 wire [23:0] adjusted_low;
 wire [23:0] final_result;
 
-wire [28:0] high_mul = A * B[22:17];
-wire [39:0] low_mul = A * B[16:0];
+(* multstyle = "logic" *) wire [28:0] high_mul;
+assign high_mul = A * B[22:17];
+(* multstyle = "logic" *) wire [39:0] low_mul;
+assign low_mul = A * B[16:0];
 
 Adder #(.DATA_WIDTH(48)) add1(
 	.x({2'b0, high_mul, 17'b0}),
