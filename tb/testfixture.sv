@@ -2,8 +2,8 @@
 
 `include "./TF_ROM.sv"
 
-`define CYCLE       10.0            // Modify your clock period here
-`define End_CYCLE   100000          // Modify cycle times once your design need more cycle times!
+`define CYCLE       55.0           // Modify your clock period here
+`define End_CYCLE   15000          // Modify cycle times once your design need more cycle times!
 
 `define PAT_NUM     8
 `define N           256
